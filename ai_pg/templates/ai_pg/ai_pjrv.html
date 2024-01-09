@@ -1,0 +1,37 @@
+<!-- Sharing learning data -->
+{% extends "common/base.html" %}
+{% load static %}
+{% block head_title %}
+{% endblock  %}
+{% block css_area %}
+    <link rel="stylesheet" href="{% static 'ai_sld/css/ai_sld.css' %}" media="screen">    
+{% endblock  %}
+
+{% block main_area %}
+
+<div class="container-fluid pt-5 bg-primary hero-header mb-0">
+    <div class="container pt-5">
+        <div class="row g-5 py-5">
+            <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
+                <div class="btn btn-sm border rounded-pill text-white px-3 mb-3 animated slideInRight">AI Use Cases</div>
+                <h1 class="display-4 text-white mb-4 animated slideInRight">AI Project Reivew</h1>
+                <p class="text-white mb-4 animated slideInRight">
+                    당신의 프로젝트를 여러사람과 공유하고 의견을 나누세요.<br>
+                </p>
+            </div>
+            <div class="col-lg-6 align-self-end text-center text-lg-end">
+                <img class="img-fluid" src="{% static 'ai_pg/images/12.gif' %}" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- sld start -->
+
+<!-- sld end -->
+
+{% endblock  %}
+
+{% block js_area %}
+            
+{% endblock  %}
+    

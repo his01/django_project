@@ -1,0 +1,39 @@
+{% extends "common/base.html" %}
+{% load static %}
+{% block head_title %}
+    GEASS-About Me
+{% endblock  %}
+{% block css_area %}
+    <link rel="stylesheet" href="{% static 'single_pages/css/about_engineer.css' %}" media="screen">    
+{% endblock  %}
+
+{% block main_area %}
+
+<div class="background-container"></div>
+
+<section class="margin-for-footer" style="margin-bottom: 200px;">
+    <div class="container pt-5 mt-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <h1 class="text-primary fw-semibold">AI Software Engineer Geass</h1>
+                <br>
+                <ul class="text-dark fw-semibold fs-4">
+                    <li class="mt-4">파이썬 라이브러리 활용</li>
+                    <li class="mt-4">Bootstrap을 활용한 웹페이지 구성</li>
+                    <li class="mt-4">django를 활용한 웹페이지 구현</li>
+                    <li class="mt-4">빅데이터를 이용한 챗봇 구현</li>
+                    <li class="mt-4">OCR기술을 활용하여 이미지 딥러닝</li>
+                </ul>
+            </div>
+            <div class="col-lg-4 mt-5">
+                <img class="img-fluid" width="600" src="{% static 'single_pages/images/me.jpg' %}">
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock  %}
+
+{% block js_area %}
+    <script src="{% static 'single_pages/js/about_engineer.js' %}"></script>
+{% endblock  %}
